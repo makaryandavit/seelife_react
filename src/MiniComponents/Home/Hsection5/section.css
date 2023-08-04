@@ -16,6 +16,7 @@
 
 .sec5-title{
     font-size: clamp(25px,4vw,45px);
+    font-weight: bold;
 }
 
 .sec5-text{

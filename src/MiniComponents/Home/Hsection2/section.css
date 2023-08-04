@@ -16,6 +16,7 @@
 
 .sec2-title{
     font-size: clamp(25px,3vw,40px);
+    font-weight: bold;
 }
 
 .sec2-text{

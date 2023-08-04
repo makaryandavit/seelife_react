@@ -1,0 +1,111 @@
+.sec6{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background-color: red;
+}
+
+.sec6-texts{
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sec6-title{
+    font-size: clamp(25px,4vw,45px);
+    font-weight: bold;
+}
+
+.sec6-text{
+    font-size: 15px;
+    text-align: center;
+    color: #777777;
+}
+
+
+.sec6-boxes{
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.sec6Box{
+    max-width: 95%;
+    width: 280px;
+    height: 550px;
+    background-color: black;
+}
+
+.sec6BoxImgPlace{
+    width: 100%;
+    height: 50%;
+    background-color: aqua;
+}
+
+.sec6BoxTexts{
+    width: 100%;
+    height: 50%;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+
+}
+
+.userImg{
+    width: 100%;
+    height: 100%;
+}
+
+.sec6BoxTitle{
+    font-size: clamp(21px,3vw,30px);
+    font-weight: bold;
+}
+
+.sec6BoxText{
+    text-align: center;
+    color: #777777;
+}
+
+.sec6BoxReTitle{
+    color: #777777;
+    margin-bottom: 15px;
+}
+
+.social{
+    width: 100%;
+    height: 25%;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.round{
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 100%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.round:hover{
+    background-color: #60bc0f;
+    border: 1px solid transparent;
+}

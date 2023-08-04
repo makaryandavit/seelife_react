@@ -1,0 +1,1 @@
+export { Hsection6 } from "./Hsection6"
