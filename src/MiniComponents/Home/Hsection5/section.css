@@ -82,6 +82,7 @@
 .sec5-btn{
     width: 160px;
     height: 40px;
+    min-height: 40px;
     background-color: #60bc0f;
     transition: .3s;
     display: flex;

@@ -1,0 +1,41 @@
+.sec7{
+    width: 100%;
+    height: auto;
+    padding: 120px 35px;
+    background-color: #60bc0f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sec7-title{
+    font-size: clamp(25px,4vw,45px);
+    color: white;
+    font-weight: bold;
+}
+
+.sec7-text{
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.sec7-btn{
+    width: 180px;
+    height: 50px;
+    background-color: #fdbb00;
+    border: 1px solid transparent;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sec7-btn:hover{
+    background: transparent;
+    border: 1px solid #fdbb00;
+}

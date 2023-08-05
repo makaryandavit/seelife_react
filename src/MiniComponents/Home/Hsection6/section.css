@@ -2,7 +2,6 @@
     width: 100%;
     height: auto;
     padding: 20px 0;
-    background-color: red;
 }
 
 .sec6-texts{
@@ -32,7 +31,6 @@
     width: 100%;
     height: auto;
     padding: 30px 0;
-    background-color: green;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,21 +40,20 @@
 
 .sec6Box{
     max-width: 95%;
-    width: 280px;
+    width: 300px;
     height: 550px;
-    background-color: black;
+    box-shadow: 0px 20px 30px rgba(153, 153, 153, 0.2);
 }
 
 .sec6BoxImgPlace{
     width: 100%;
     height: 50%;
-    background-color: aqua;
+    overflow: hidden;
 }
 
 .sec6BoxTexts{
     width: 100%;
     height: 50%;
-    background-color: orange;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,6 +66,7 @@
 .userImg{
     width: 100%;
     height: 100%;
+    transition: .3s;
 }
 
 .sec6BoxTitle{
@@ -89,7 +87,6 @@
 .social{
     width: 100%;
     height: 25%;
-    background-color: pink;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,13 +96,29 @@
 .round{
     width: 35px;
     height: 35px;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 100%;
     transition: .3s;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .round:hover{
     background-color: #60bc0f;
     border: 1px solid transparent;
+}
+
+.icon{
+    color: #777777;
+    font-size: 17px;
+}
+
+.round:hover .icon{
+    color: white;
+}
+
+.sec6Box:hover .userImg{
+    transform: scale(1.2);
 }
