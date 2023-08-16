@@ -1,43 +1,56 @@
 import React, { useState } from 'react'
 import "./header.css"
 import Logo from "../../assets/images/logo.png.webp"
-import { NavLink } from 'react-router-dom'
-
+import { Link, NavLink } from 'react-router-dom'
+import { Dropdown } from '../Dropdown/Dropdown'
+import BurgerDropdown from '../../MiniComponents/BurgerDropdown/BurgerDropdown'
 
 const links = [
     {
         id: Math.random(),
         name: 'HOME',
         path: '/',
+        dropdown: false,
     },
     {
         id: Math.random(),
         name: 'ABOUT',
         path: '/about',
+        dropdown: false,
     },
     {
         id: Math.random(),
         name: 'CAUSES',
         path: '/causes',
+        dropdown: false,
     },
     {
         id: Math.random(),
         name: 'PAGES',
-        path: '/pages',
+        path: '#',
+        dropdown: true,
+        changeAble: false,
+        dropItems: ['Events','Events Details','Elements'],
     },
     {
         id: Math.random(),
         name: 'BLOG',
         path: '/blog',
+        dropdown: false,
     },
     {
         id: Math.random(),
         name: 'CONTACT',
         path: '/contact',
+        dropdown: false,
     },
 ]
 
 const Header = () => {
+
+
+    const [isOpen,setIsOpen] = useState(false)
+
 
     const [burger,setBurger] = useState(false);
     const [headerScroll,setHeaderScroll] = useState(false)
@@ -64,8 +77,11 @@ const Header = () => {
                 <ul className='header-ul'>
                     {
                         links.map(item => (
-                            <li key={item.id}>
-                                <NavLink className='link' to={item.path}>{item.name}</NavLink>
+                            <li key={item.id} className='listLink'>
+                                <NavLink className={item.dropdown ? 'link notActive' : 'link'} to={item.path} >{item.name}</NavLink>
+                                {
+                                    item.dropdown ? <Dropdown dropItems={item.dropItems} /> : ''
+                                }
                             </li>
                         ))
                     }
@@ -86,7 +102,13 @@ const Header = () => {
                             {
                                 links.map(item => (
                                     <li key={item.id} className='list'>
-                                        <NavLink className='link' to={item.path} onClick={() => setBurger(false)}>{item.name}</NavLink>
+                                        <NavLink className={item.dropdown ? 'link notActive' : 'link'} to={item.path} onClick={() => {
+                                            item.dropdown ? setBurger(true) : setBurger(false)
+                                            item.name == 'PAGES' ? setIsOpen(!isOpen) : setIsOpen(false)
+                                        }}>{item.name}</NavLink>
+                                        {
+                                            item.dropdown && isOpen ? <BurgerDropdown burger={burger} burgerDrop={item.dropItems} /> : ''
+                                        }
                                     </li>
                                 ))
                             }   

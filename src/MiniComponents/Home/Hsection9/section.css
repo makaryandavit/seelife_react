@@ -1,0 +1,91 @@
+.sec9{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.sec9-inside{
+    width: 70%;
+    height: auto;
+    padding: 10px 20px;
+    background-image: url(../../../assets/images/bgiSec9.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    /* transform: translateY(20%); */
+}
+
+.sec9-left{
+    min-width: 50%;
+}
+
+.sec9-title{
+    font-size: clamp(25px,4vw,40px);
+    color: white;
+    font-weight: bold;
+}
+
+.sec9-right{
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.sec9-inp{
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.sec9-btn{
+    width: 180px;
+    height: 50px;
+    background-color: #fdbb00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border: 1px solid transparent;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.sec9-btn:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid #fdbb00;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+    .sec9-inside{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .sec9-left{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sec9-title{
+        text-align: center;
+    }
+
+    .sec9-right{
+        width: 100%;
+    }
+
+}

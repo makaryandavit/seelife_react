@@ -5,3 +5,5 @@ export { Hsection4 } from "./Hsection4";
 export { Hsection5 } from "./Hsection5";
 export { Hsection6 } from "./Hsection6";
 export { Hsection7 } from "./Hsection7";
+export { Hsection8 } from "./Hsection8";
+export { Hsection9 } from "./Hsection9";

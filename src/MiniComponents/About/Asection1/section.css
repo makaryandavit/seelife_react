@@ -1,0 +1,41 @@
+.a-sec1{
+    width: 100%;
+    height: 60vh;
+    background-image: url(../../../assets/layers/aboutBackground.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.a-sec1::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+.aSec1-title{
+    font-size: clamp(25px,4vw,40px);
+    color: white;
+    position: relative;
+    z-index: 5;
+    font-weight: bold;
+    
+}
+
+.aSec1-text{
+    font-size: 14px;
+    color: white;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    padding: 0 30px;
+}

@@ -90,6 +90,7 @@
     justify-content: center;
     cursor: pointer;
     font-size: 14px;
+    color: white;
 }
 
 .sec5Box:hover .sec5-btn{

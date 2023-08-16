@@ -4,3 +4,6 @@ export { Hsection3 } from "./Home";
 export { Hsection4 } from "./Home";
 export { Hsection5 } from "./Home";
 export { Hsection6 } from "./Home";
+export { Hsection7 } from "./Home";
+export { Hsection8 } from "./Home";
+export { Hsection9 } from "./Home";

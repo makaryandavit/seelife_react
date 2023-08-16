@@ -1,0 +1,62 @@
+.e_sec1{
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.eSec1-left{
+    width: 550px;
+    max-width: 95%;
+    height: 550px;
+    background-image: url(../../../../assets/layers/childs.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.eSec1-right{
+    width: 550px;
+    max-width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.e-title{
+    font-size: clamp(25px,3vw,35px);
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.e-text{
+    font-size: 16px;
+    color: #777777;
+}
+
+.e-social{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 14px;
+    color: #777777;
+}
+
+@media screen and (max-width: 1150px){
+    .e-title{
+        text-align: center;
+    }
+    
+    .e-text{
+        text-align: center;
+    }
+
+    .e-social{
+        display: flex;
+        justify-content: center;;
+    }
+}

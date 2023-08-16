@@ -119,7 +119,7 @@ nav{
 }
 
 .burgerContentChange{
-    height: 350px;
+    height: auto;
 }
 
 .line1Change{
@@ -141,6 +141,7 @@ nav{
     flex-direction: column;
     justify-content: space-evenly;
     padding: 30px;
+    gap: 10px;
 }
 
 .list{
@@ -172,4 +173,91 @@ nav{
         display: block;
     }
     
+}
+
+.listLink:hover .dropdown{
+    display: block;
+}
+
+.listLink{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+@keyframes fromBottom{
+    from{
+        transform: translateX(-50%) translateY(30%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(-50%) translateY(0%);
+        opacity: 1;
+    }
+}
+
+.dropdown{
+    min-width: 180px;
+    background-color: white;
+    position: absolute;
+    top: 8vh;
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%) translateY(30%);
+    display: none;
+    animation: .7s fromBottom .1s forwards;
+    opacity: 0;
+}
+
+.dropdown ul{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.drop-link{
+    color: black;
+    transition: .3s;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+
+.drop-li{
+    width: 100%;
+    padding: 10px;
+    transition: .3s;
+}
+
+.drop-li:nth-child(odd){
+    border-top: 1px solid rgb(201, 201, 201);
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.drop-li:hover{
+    background-color: #60bc0f;
+}
+
+.drop-li:hover .drop-link{
+    color: white;
+}
+
+.notActive{
+    color: white;
+}
+
+.notActive::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    left: 0;
+    bottom: -3px;
+    position: absolute;
 }

@@ -1,0 +1,79 @@
+.sec8{
+    width: 100%;
+    height: auto;
+    padding: 30px 5px;
+}
+
+.sec8-texts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.sec8-title{
+    font-size: clamp(25px,4vw,38px);
+    font-weight: bold;
+}
+
+.sec8-text{
+    color: #777777;
+    font-size: 15px;
+}
+
+.sec8-boxes{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.sec8Box{
+    max-width: 95%;
+    width: 370px;
+    height: 400px;
+}
+
+.sec8BoxImgPlace{
+    width: 100%;
+    height: 65%;
+}
+
+.sec8BoxImg{
+    width: 100%;
+    height: 100%;
+}
+
+.sec8BoxDates{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.sec8BoxTitle{
+    width: 100%;
+    height: 20%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+
+.dates-right, .dates-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #777777;
+}

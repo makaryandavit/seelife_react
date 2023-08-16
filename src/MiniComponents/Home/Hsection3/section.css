@@ -9,7 +9,7 @@
 }
 
 .sec3-left{
-    width: 500px;
+    width: 550px;
     height: 600px;
     background-image: url(../../../assets/layers/team.webp);
     background-size: cover;
@@ -17,7 +17,7 @@
 }
 
 .sec3-right{
-    width: 500px;
+    width: 550px;
     height: 600px;
     margin-left: -20px;
     margin-top: 70px;
@@ -58,6 +58,7 @@
 .sec3-btn:hover{
     background: transparent;
     border: 2px solid #60bc0f;
+    color: black;
 }
 
 @media screen and (max-width: 1000px){

@@ -15,3 +15,22 @@
 body,#root{
     overflow-x: hidden;
 }
+
+.toTop{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: white;
+    border: 1px solid #777777;
+    cursor: pointer;
+}
+
+.arrow{
+    font-size: 30px;
+}

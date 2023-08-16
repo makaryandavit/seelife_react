@@ -27,15 +27,15 @@
     height: 50px;
     background-color: #fdbb00;
     border: 1px solid transparent;
-    transition: .3s;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 14px;
     cursor: pointer;
+    transition: .8s;
 }
 
 .sec7-btn:hover{
-    background: transparent;
+    background-color: transparent;
     border: 1px solid #fdbb00;
 }
