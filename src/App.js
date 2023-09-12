@@ -4,6 +4,7 @@ import { About, Causes, Home, Layout } from './Components';
 import { HiArrowSmUp } from "react-icons/hi";
 import { Pages } from './Components/Pages';
 import { EventDetails, Events } from './MiniComponents/Pages';
+import ScrollToTop from './Settings/ScrollToTop';
 
 
 
@@ -27,6 +28,7 @@ function App() {
             })
           }}/>
         </div>
+        <ScrollToTop />
     </div>
   );
 }

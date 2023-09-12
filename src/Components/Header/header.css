@@ -240,13 +240,19 @@ nav{
     border-bottom: 1px solid rgb(201, 201, 201);
 }
 
-.drop-li:hover{
-    background-color: #60bc0f;
+@media screen and (min-width: 800px){
+    .drop-li:hover{
+        background-color: #60bc0f;
+    }
+
+    .drop-li:hover .drop-link{
+        color: white;
+    }
+    
+    
 }
 
-.drop-li:hover .drop-link{
-    color: white;
-}
+
 
 .notActive{
     color: white;
